@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 
 <html>
+    <script type="text/javascript">
+
+Image1= new Image(150,20)
+Image1.src = "./images.background.jpg"
+
+</script>
     <head>
         <title>Site</title>
 
@@ -25,7 +31,10 @@
             }
 
             .landing {
-                background-image: url(./images/background.jpg);
+                  background: url(images/background.jpg) no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
                 background-size: cover;
                 background-repeat: no-repeat;
                 display: flex;
@@ -37,21 +46,64 @@
 
             .landing .header .first-font {
                 font-size: 55px;
-                color: #303030;
+                color: #fff;
                 letter-spacing: 8px;
             }
             
-            .landing .header .second-font {
+.landing .header .second-font {
+                
                 font-size: 55px;
-                color: #545353;
                 letter-spacing: 8px;
-            }
+                color: #7a7d80;
+                background: linear-gradient(129deg, #e75757, #dc9224, #e6e53b, #6ee63b, #3be6bd, #3b96e6, #683be6, #e63bdd);
+                background-size: 1600% 1600%;
+                color: transparent;
+                -webkit-text-fill-color: transparent;
+                -moz-text-fill-color: transparent;
+                -o-text-fill-color: transparent;
+                background-clip: text;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                -o-background-clip: text;
+                
+                -webkit-animation: Rainbow 27s ease infinite;
+                -moz-animation: Rainbow 27s ease infinite;
+                -o-animation: Rainbow 27s ease infinite;
+                animation: Rainbow 27s ease infinite;
+}
+              
+@keyframes Rainbow { 
+    0%{background-position:0% 14%}
+    50%{background-position:100% 87%}
+    100%{background-position:0% 14%}
+}
+@-webkit-keyframes Rainbow {
+    0%{background-position:0% 14%}
+    50%{background-position:100% 87%}
+    100%{background-position:0% 14%}
+}
+@-moz-keyframes Rainbow {
+    0%{background-position:0% 14%}
+    50%{background-position:100% 87%}
+    100%{background-position:0% 14%}
+}
+@-o-keyframes Rainbow {
+    0%{background-position:0% 14%}
+    50%{background-position:100% 87%}
+    100%{background-position:0% 14%}
+}
+                
+
+            
             
         </style>
+        
+        <!--Loader-->
+        
+        <!--Loader End-->
+        
     </head>
-    <body>
-        
-        
+    <body >
         <div class="container">
             <div class="landing">
                 <h1 class="animated fadeInDown">
@@ -61,10 +113,6 @@
                 </div>
                     </h1>
             </div>
-        </div>
-        
-
-        
-        
+        </div>  
     </body>
 </html>
